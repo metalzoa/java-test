@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 /**
  * An example of "Inheritance breaks Encapsulation"
- * 상속(Inheritance)이 캡슐화(Encapsulation)를 망치는 예제입니다.
+ *
  *
  * @author Kevin Lee
  * @since 2015-08-01
@@ -91,8 +91,7 @@ class MySet<E> extends HashSet<E> {
 }
 
 /**
- * NewSet은 HashSet에 있는 Inheritance가 Encapsulation을 깨뜨리는 것을 미리 예방해서
- * 다시 디자인한것입니다. (add 와 addAll 메소드에 한정)
+
  */
 class NewSet<E> extends HashSet<E> {
     @Override

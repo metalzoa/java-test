@@ -21,8 +21,13 @@ public class OopAndFpExamples {
 
         final FpCalculatorService fpCalculatorService = new FpCalculatorService();
         final Calculation addition = (i1, i2) -> i1 + i2;
+
+        final Calculation substration = (i1, i2) -> i1 - i2;
+
+
         System.out.println("       additon: " + fpCalculatorService.calculate(addition, 11, 4));
-        System.out.println("   subtraction: " + fpCalculatorService.calculate((i1, i2) -> i1 - i2, 11, 1));
+        System.out.println("  subtraction1: " + fpCalculatorService.calculate((i1, i2) -> i1 - i2, 11, 1));
+        System.out.println("  substration2: " + fpCalculatorService.calculate(substration, 11, 1));
         System.out.println("multiplication: " + fpCalculatorService.calculate((i1, i2) -> i1 * i2, 11, 2));
         System.out.println("      division: " + fpCalculatorService.calculate((i1, i2) -> i1 / i2, 20, 4));
         System.out.println("   custom calc: " + fpCalculatorService.calculate((i1, i2) -> ((i1 + i2) * 2) / i2, 20, 4));
