@@ -14,7 +14,9 @@ public class IntegerNumbersStream {
 
         final String result = numbers
                 .stream()
-                .map(String::valueOf)
+                .map( // key value 자료 구조가 아닌고 A 라는 타입을 B 라는 타입으로 맵핑 한다는 의미
+                        String::valueOf // String.valuesOf() 안에 값을 넣어서 변환 한다는 의미
+                )
                 .collect(Collectors.joining((" : ")));
 
 
