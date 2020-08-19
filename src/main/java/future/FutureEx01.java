@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class FutureEx {
+public class FutureEx01 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService es = Executors.newCachedThreadPool();
 
