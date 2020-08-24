@@ -1,4 +1,4 @@
-package compare;
+package compare.a01;
 
 public class CompareExam {
 

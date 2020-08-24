@@ -1,4 +1,4 @@
-package functional;
+package functional.a01;
 
 import java.util.ArrayList;
 import java.util.Arrays;

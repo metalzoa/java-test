@@ -1,4 +1,4 @@
-package annotation;
+package annotation.a01;
 
 public class MyHello {
 

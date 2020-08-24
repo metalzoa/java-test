@@ -1,4 +1,4 @@
-package functional;
+package functional.a01;
 
 public class OopAndFpExamples {
 
