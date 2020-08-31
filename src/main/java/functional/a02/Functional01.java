@@ -1,5 +1,6 @@
 package functional.a02;
 
+import java.util.Comparator;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
@@ -35,5 +36,14 @@ public class Functional01 {
         c.accept("-----> hello consumer");
 
 
+        /*
+         * 자바의 전통적인 인터페이스 중 하나이다.
+         * 객체간 우선순위를 비교할때 사용하는 인터페이스인데 전통적으로 1회성 구현을 많이 하는 인터페이스이다.
+         * 람다의 등장으로 Comparator의 구현이 매우 간결해져
+         * Comparable 인터페이스의 실효성이 많이 떨어진듯 하다.
+         */
+        Comparator<String> cp = (str1, str2) -> str1.compareTo(str2);
+        int cpResult = cp.compare("aaa", "bbb");
+        System.out.println("-----> result : "+cpResult);
     }
 }
